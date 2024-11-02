@@ -41,8 +41,6 @@ export function Navbar() {
             >
               Creator
             </Link> */}
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4595836161756268"
-     crossorigin="anonymous"></script>
           </div>
           <ThemeToggle />
         </div>
