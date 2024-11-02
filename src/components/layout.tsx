@@ -19,28 +19,28 @@ export function Navbar() {
         )}
       >
         <div className="hidden select-none text-xl font-extrabold uppercase md:block">
-          Downloader
+          insta video Downloader
         </div>
-        <MobileNav className="md:hidden" />
+{/*         <MobileNav className="md:hidden" /> */}
         <div className="ml-auto flex items-center gap-4">
           <div className="hidden items-center gap-4 text-lg sm:gap-8 sm:pr-8 md:flex">
-            <Link href="/" className="hover:underline">
+{/*             <Link href="/" className="hover:underline">
               Home
-            </Link>
-            <Link
+            </Link> */}
+{/*             <Link
               target="_blank"
-              href="https://github.com/riad-azz/instagram-video-downloader"
+              href=""
               className="hover:underline"
             >
               Github
-            </Link>{" "}
-            <Link
+            </Link>{" "} */}
+{/*             <Link
               target="_blank"
               href="https://github.com/riad-azz"
               className="hover:underline"
             >
               Creator
-            </Link>
+            </Link> */}
           </div>
           <ThemeToggle />
         </div>
