@@ -12,9 +12,6 @@ import { cn } from "@/lib/utils";
 export function Navbar() {
   return (
     <>
-        <Head>
-      <meta name="google-adsense-account" content="ca-pub-4595836161756268">
-      </Head>
     <header className="h-fit w-full">
       <nav
         className={cn(
