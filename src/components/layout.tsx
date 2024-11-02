@@ -12,10 +12,23 @@ import { cn } from "@/lib/utils";
 export function Navbar() {
   return (
     <>
-       <Head>
+        <Head>
         {/* Google AdSense Script */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4595836161756268"
-     crossorigin="anonymous"></script>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4595836161756268"
+          crossOrigin="anonymous"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4595836161756268",
+                enable_page_level_ads: true
+              });
+            `,
+          }}
+        />
       </Head>
     <header className="h-fit w-full">
       <nav
