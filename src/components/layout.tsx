@@ -13,22 +13,7 @@ export function Navbar() {
   return (
     <>
         <Head>
-        {/* Google AdSense Script */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4595836161756268"
-          crossOrigin="anonymous"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-4595836161756268",
-                enable_page_level_ads: true
-              });
-            `,
-          }}
-        />
+      <meta name="google-adsense-account" content="ca-pub-4595836161756268">
       </Head>
     <header className="h-fit w-full">
       <nav
