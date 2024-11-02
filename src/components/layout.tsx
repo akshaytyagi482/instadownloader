@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Head from 'next/head';
 
 import { MobileNav } from "./mobile-nav";
 import { ThemeToggle } from "./theme-toggle";
@@ -10,6 +11,12 @@ import { cn } from "@/lib/utils";
 
 export function Navbar() {
   return (
+    <>
+       <Head>
+        {/* Google AdSense Script */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4595836161756268"
+     crossorigin="anonymous"></script>
+      </Head>
     <header className="h-fit w-full">
       <nav
         className={cn(
@@ -46,6 +53,7 @@ export function Navbar() {
         </div>
       </nav>
     </header>
+    </>
   );
 }
 
