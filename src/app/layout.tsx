@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { DM_Sans as FontSans } from "next/font/google";
-import Head from 'next/head';
 import { Navbar, Footer } from "@/components/layout";
 import Adsense from '@/components/Adsense';
 
@@ -10,6 +9,7 @@ import { ReactQueryProvider } from "@/components/providers/react-query-provider"
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
+import AdSense from "@/components/Adsense";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -28,9 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-       <Head>
-      <Adsense />
-      </Head>
+       <head>
+      <AdSense />
+      </head>
       <body
         className={cn(
           fontSans.variable,
