@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { DM_Sans as FontSans } from "next/font/google";
 import Head from 'next/head';
 import { Navbar, Footer } from "@/components/layout";
+import {Adsense} from '@/components/Adsense';
 
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { ReactQueryProvider } from "@/components/providers/react-query-provider";
@@ -28,22 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
        <Head>
-        {/* Google AdSense Script */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4595836161756268"
-          crossOrigin="anonymous"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-4595836161756268",
-                enable_page_level_ads: true
-              });
-            `,
-          }}
-        />
+      <Adsense />
       </Head>
       <body
         className={cn(
